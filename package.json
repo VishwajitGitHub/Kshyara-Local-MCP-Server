@@ -1,0 +1,32 @@
+{
+  "name": "kshyara-lmcp-server",
+  "version": "5.0.0",
+  "description": "Kshyara LMCP Server - A massive collection of 32,000+ Model Context Protocol tools and 150+ workflows",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "license-server": "node license_server.js",
+    "sse": "node server.js --sse",
+    "dev": "node --watch server.js",
+    "lint": "eslint server.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "tools",
+    "server"
+  ],
+  "author": "Kshyara",
+  "license": "Custom",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.1.0",
+    "globals": "^17.4.0"
+  }
+}
